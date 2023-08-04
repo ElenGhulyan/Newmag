@@ -1,0 +1,60 @@
+/*import header from "./header/header";*/
+
+
+
+/*!*@font-face {*!*/
+/*!*    font-family: 'NotoSansArmenian';*!*/
+/*!*    src: url("../main/../../components/../assets/fonts/Noto_Sans_Armenian/NotoSansArmenian-VariableFont_wdth,wght.ttf") format('ttf');*!*/
+/*!*}*!*/
+
+
+
+
+
+/*header {*/
+/*    background-color: #fff;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.header-menu ul {*/
+/*    display: flex;*/
+/*    gap: 40px;*/
+/*}*/
+
+
+
+/*.menu-icons {*/
+/*    display: flex;*/
+/*    gap: 30px;*/
+/*}*/
+
+/*.menu-icons select {*/
+/*    border: none;*/
+/*    color: #000;*/
+/*    font-family: Noto Sans Armenian;*/
+/*    font-size: 18px;*/
+/*    font-style: normal;*/
+/*    font-weight: 500;*/
+/*    line-height: normal;*/
+/*}*/
+
+/*.menu-about-us {*/
+/*    display: flex;*/
+/*    gap: 5px;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*}*/
+
+/*ul.about-us-drop-down {*/
+/*    display: none;*/
+
+/*}*/
+
+
+
