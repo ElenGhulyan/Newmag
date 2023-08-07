@@ -4,6 +4,7 @@ const BannerHomePage = () =>{
     return(
         <>
            <div className='content flex '>
+
                <div className='bg-purple-400 rounded-tl-[30px] rounded-bl-[30px] w-full max-w-[560px] h-[819px]'>
                    <div className='w-full max-w-[364px] m-auto pt-[60px]'>
                        <img src={BannerImg} className='w-full h-[546px]' alt="header logo"/>
@@ -11,6 +12,7 @@ const BannerHomePage = () =>{
                    <p className='mt-[60px] mx-auto w-full max-w-[442px] text-white text-center text-xl not-italic font-medium leading-7'>Արժեք ստեղծող և ճաշակ ձևավորող մարդկանց ոչ ձանձրալի մտքերն՝
                        առաջին դեմքով</p>
                </div>
+
                <div className='bg-[#3B5CB2] w-full max-w-[560px] h-[819px]'>
                    <div className='w-full max-w-[364px]  m-auto pt-[60px]'>
                        <img src={BannerImg} className='w-full h-[546px]' alt="header logo"/>

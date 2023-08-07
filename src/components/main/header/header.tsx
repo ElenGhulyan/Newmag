@@ -64,7 +64,7 @@ const Header = () => {
                             </svg>
                         </div>
                         <div className="search-icon" onClick={() => {
-                            setOpen(!open)
+                            setOpen(true)
                         }}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none">
@@ -74,13 +74,35 @@ const Header = () => {
                             </svg>
                         </div>
                         {open && (
-                            <div className='overflow'>
-                                <div className='search-popup'>
-                                    <input type="search"/>
-                                    <button>Search</button>
-                                </div>
+                            <>
+                                <div className='modal' onClick={() => {
+                                    setOpen(false)
+                                }}></div>
 
-                            </div>
+                                <div className='overflow-bg'>
+
+                                    <form>
+                                        <div className="flex">
+
+
+                                            <div className="relative w-full flex justify-center">
+                                                <input type="search" id="search-dropdown"
+                                                       className='w-full max-w-[955px] h-[120px] rounded-l-[20px] pl-[60px]'
+                                                       placeholder="Search Mockups, Logos, Design Templates..."
+                                                       required />
+                                                    <button type="submit"
+                                                            className='p-[35px] bg-[#000] rounded-r-[20px]'
+                                                            >
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                                            <path d="M43.7513 43.7501L34.4055 34.3876M39.5846 21.8751C39.5846 26.5716 37.7189 31.0758 34.398 34.3968C31.077 37.7177 26.5728 39.5834 21.8763 39.5834C17.1798 39.5834 12.6756 37.7177 9.35462 34.3968C6.03366 31.0758 4.16797 26.5716 4.16797 21.8751C4.16797 17.1785 6.03366 12.6744 9.35462 9.3534C12.6756 6.03244 17.1798 4.16675 21.8763 4.16675C26.5728 4.16675 31.077 6.03244 34.398 9.3534C37.7189 12.6744 39.5846 17.1785 39.5846 21.8751V21.8751Z" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                                        </svg>
+                                                    </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </>
+
                         )}
 
 

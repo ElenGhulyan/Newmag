@@ -3,7 +3,7 @@ const BookGallery = () => {
     return (
         <>
 
-            <div className='py-[100px] bg-[#F1F6F9] mt-[100px]'>
+            <section className='py-[100px] bg-[#F1F6F9] mt-[100px]'>
                 <div className='flex content gap-[41px]'>
                     <div className='bg-[#E2916F] rounded-[20px] w-full max-w-[303px] h-[481px]'>
                         <div className='w-full max-w-[172px] mx-auto mt-[40px] mb-[30px]'>
@@ -43,7 +43,7 @@ const BookGallery = () => {
 
 
                 </div>
-            </div>
+            </section>
 
         </>
     )
