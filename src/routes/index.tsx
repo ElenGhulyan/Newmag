@@ -9,11 +9,12 @@ import reviews from "./reviews";
 import media from "./media";
 import Articles from "./articles";
 import HomePage from "../pages/homePage";
+import Footer from "../components/main/footer/footer";
 
 export default createBrowserRouter([
     {
         path: "/",
-        element: <> <App/> <HomePage/></>,
+        element: <> <App/> <HomePage/><Footer/> </>,
     },
     ...BooksRouts,
     ...AuthorsRoutes,

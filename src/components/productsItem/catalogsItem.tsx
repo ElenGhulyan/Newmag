@@ -1,14 +1,11 @@
 import {CatalogData} from "../../mockData/HomeData/catalogData";
 
-const CatalogsItem = () => {
+const CatalogsItem = ({item}:{item:any}) => {
     return (
         <>
-            {
-                CatalogData.map((item) => {
-                    return(
                         <div className='content'>
-                            <div className='w-full max-w-[230px] h-[354px]'>
-                                <img src={item.src} className='w-full' alt={item.alt}/>
+                            <div className='w-full max-w-[230px] h-[336px]'>
+                                <img src={item.src} className='w-full h-full' alt={item.alt}/>
                             </div>
                             <div>
                                 <p className='mt-[21px] mb-[10px] text-black text-lg not-italic font-bold'>{item.bookTitle}</p>
@@ -19,11 +16,6 @@ const CatalogsItem = () => {
                                 <a href="src/components/productsItem/observableItem" className='text-black text-center text-[16px] font-medium '>Դիտել</a>
                             </div>
                         </div>
-                    )
-                } )
-
-            }
-
         </>
     )}
 

@@ -1,11 +1,10 @@
 
 import {HomeProductsItem} from '../../mockData/HomeData/homeData'
 
-const ObservableItem = () => {
+const ObservableItem = ({item}:{item:any}) => {
     return (
         <>
-            {    HomeProductsItem.map((item)=>{
-                return(
+
                     <div>
                         <div className='w-full max-w-[230px] h-[354px]'>
                             <img src={item.src} className='w-full' alt={item.alt}/>
@@ -19,9 +18,7 @@ const ObservableItem = () => {
                             <a href="src/components/productsItem/observableItem" className='text-black text-center text-[16px] font-medium '>Դիտել</a>
                         </div>
                     </div>
-                )
 
-            })}
 
 
         </>

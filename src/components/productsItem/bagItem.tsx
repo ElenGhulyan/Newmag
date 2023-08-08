@@ -1,13 +1,9 @@
 import bagImg from "../../assets/images/bag-img.png";
 import {BagData} from "../../mockData/HomeData/bagdata";
 
-const BagItem = () => {
+const BagItem = ({item}:{item:any}) => {
     return (
         <>
-
-            {BagData.map((item) => {
-
-              return (
                   <div className='flex w-full max-w-[540px] border border-solid border-[#C4D7E2] rounded-[20px] '>
                       <div className='w-full max-w-[250px] bg-[#D9D9D9] px-[17px] pt-[20px] pb-[32px] rounded-l-[20px]'>
                           <div className='w-full max-w-[215px]'>
@@ -23,10 +19,6 @@ const BagItem = () => {
                           </button>
                       </div>
                   </div>
-              )
-            })}
-
-            
         </>
     )
 }
