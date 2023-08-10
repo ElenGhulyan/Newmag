@@ -19,8 +19,6 @@ const ObservableItem = ({item}:{item:any}) => {
                         </div>
                     </div>
 
-
-
         </>
     )
 }
