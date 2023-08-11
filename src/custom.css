@@ -62,7 +62,7 @@
     display: inline-block;
     padding-bottom: 15px;
 }
-.font-semibold{
+.font_semibold{
     font-weight: 600;
 }
 .text-line:after {
@@ -101,3 +101,61 @@ select {
     background-color:#F34802;
     border-radius: 10px;
 }
+
+/* In your CSS file or component's styling */
+
+/*.slick-slider {*/
+/*    height: 400px; !* Adjust the height as needed *!*/
+/*}*/
+
+/*.slick-slide {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    height: 100px; !* Adjust the item height as needed *!*/
+/*    background-color: #f0f0f0;*/
+/*    border: 1px solid #ddd;*/
+/*}*/
+
+/*.slick-center {*/
+/*    transform: scale(1.1); !* Scale the center item for emphasis *!*/
+/*    transition: transform 0.3s ease-in-out;*/
+/*}*/
+
+
+
+.main {
+    font-family:Arial;
+    width:500px;
+    display:block;
+    margin:0 auto;
+}
+h3 {
+    background: #fff;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+.action{
+    display:block;
+    margin:100px auto;
+    width:100%;
+    text-align:center;
+}
+.action a {
+    display:inline-block;
+    padding:5px 10px;
+    background:#f30;
+    color:#fff;
+    text-decoration:none;
+}
+.action a:hover{
+    background:#000;
+}
+/*.slick-list{*/
+/*    transform: rotate(89deg) !important;*/
+/*}*/

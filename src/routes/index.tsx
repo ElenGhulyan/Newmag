@@ -8,6 +8,7 @@ import translators from "./translators";
 import reviews from "./reviews";
 import media from "./media";
 import Articles from "./articles";
+import BooksSinglePage from "./bookSinglePage";
 import HomePage from "../pages/homePage";
 import Footer from "../components/main/footer/footer";
 
@@ -22,5 +23,9 @@ export default createBrowserRouter([
     ...Articles,
     ...translators,
     ...reviews,
-    ...media
+    ...media,
+    ...BooksSinglePage
+
+
+
 ]);

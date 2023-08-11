@@ -9,8 +9,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name:1
-
     },
     {
         id: 2,
@@ -20,7 +18,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 0,
-        name:2
     },
     {
         id: 3,
@@ -30,7 +27,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name:3
     },
     {
         id: 4,
@@ -40,7 +36,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 0,
-        name:4
     },
     {
         id: 5,
@@ -50,7 +45,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name:5
     },
     {
         id: 6,
@@ -60,7 +54,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name:6
     },
     {
         id: 7,
@@ -70,7 +63,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name:7
     },
     {
         id: 8,
@@ -80,7 +72,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name:8
     },
     {
         id: 9,
@@ -90,7 +81,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name:9
     },
     {
         id: 10,
@@ -100,7 +90,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name:10
     },
     {
         id: 11,
@@ -109,8 +98,7 @@ export const BooksData = [
         bookTitle: 'Լռակյաց հիվանդը ...',
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
-        count: 1,
-        name:11
+        count: 0,
     },{
         id: 12,
         src: CatalogImg,
@@ -119,7 +107,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name:12
     },
     {
         id: 13,
@@ -129,7 +116,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name:13
     },
     {
         id: 14,
@@ -138,8 +124,7 @@ export const BooksData = [
         bookTitle: 'Լռակյաց հիվանդը ...',
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
-        count: 1,
-        name:14
+        count: 0,
     },
     {
         id: 15,
@@ -149,7 +134,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name:15
     },
     {
         id: 16,
@@ -159,7 +143,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name:16
     },
     {
         id: 17,
@@ -169,7 +152,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name: 17
     },
     {
         id: 18,
@@ -179,7 +161,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name: 18
     },
     {
         id: 19,
@@ -189,7 +170,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name:19
     },
     {
         id: 20,
@@ -198,8 +178,7 @@ export const BooksData = [
         bookTitle: 'Լռակյաց հիվանդը ...',
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
-        count: 1,
-        name:20
+        count: 0,
     },
     {
         id: 21,
@@ -209,15 +188,6 @@ export const BooksData = [
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
         price: "9500 ֏",
         count: 1,
-        name:21
     },
-
-
-
-
-
-
-
-
 
 ]

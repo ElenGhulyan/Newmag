@@ -1,11 +1,13 @@
 import BookSectionImg from "../../assets/images/book-section-img.png";
-
+import {Link} from "react-router-dom";
 const BookItem = ({item}:{item:any}) => {
     return (
         <>
             <div className='px-[20px] py-[30px] border  rounded-[10px] bg-white shadow'>
                 <div className='w-full max-w-[140px] h-[200px] m-auto'>
-                    <img src={BookSectionImg}  alt="" className='w-full h-full'/>
+                    <Link to='/bookSinglePage'>
+                        <img src={BookSectionImg}  alt="" className='w-full h-full'/>
+                    </Link>
                 </div>
                 <div className='mt-[30px]'>
                     <h2 className='text-base font-bold text-black '>{item.title} </h2>
@@ -13,9 +15,8 @@ const BookItem = ({item}:{item:any}) => {
                     <span className='text-[#F34802] text-lg font-bold'>{item.price}</span>
                 </div>
                 <div className='flex gap-[10px] mt-[15px]'>
-                    <a href="" className='py-[11px] px-[27px] text-black text-center text-sm  font-semibold border border-black rounded-[10px]'>Դիտել</a>
+                    <a href="" className='py-[11px] px-[27px] text-black text-center text-sm  font_semibold border border-black rounded-[10px]'>Դիտել</a>
                     {/*<button className='bg-black py-[11px] px-[27px] text-white text-sm font-normal'></button>*/}
-
                     {item.count ?
                         <button className='bg-black py-[9px] px-[9px] rounded-[10px] w-full max-w-[42px] h-[42px]'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -24,10 +25,6 @@ const BookItem = ({item}:{item:any}) => {
                     </button> : <button className='bg-black py-[11px] px-[21px] text-white text-sm font-normal rounded-[10px]'>Առկա չէ</button>}
                 </div>
             </div>
-
-
-
-
         </>
     )
 }

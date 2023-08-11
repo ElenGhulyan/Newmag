@@ -22,7 +22,7 @@ const Footer = () =>{
                 <div className='flex justify-between'>
 
                     <div>
-                        <h3 className='text-white text-xl font-semibold  text-line'>Բաժիններ</h3>
+                        <h3 className='text-white text-xl font_semibold  text-line'>Բաժիններ</h3>
                         <div className='flex footer-menu justify-between  '>
                             <ul>
                                 <li><a href="" > Մեր մասին</a></li>
@@ -45,7 +45,7 @@ const Footer = () =>{
 
                     </div>
                     <div className=''>
-                        <h3 className='text-white text-xl font-semibold text-line'>Պատվիրել</h3>
+                        <h3 className='text-white text-xl font_semibold text-line'>Պատվիրել</h3>
                         <p><a href="" className='text-white text-base font-medium inline-block pb-[15px] ' >Գիրք պատվիրելու պայմանները</a></p>
                         <p><a href="" className='text-white text-base font-medium inline-block mb-[32px]' >Գովազդ և Ծառայություններ</a></p>
 
@@ -67,7 +67,7 @@ const Footer = () =>{
 
                     </div>
                     <div>
-                        <h3 className='text-white text-xl font-semibold  text-line' >Կապ մեզ հետ</h3>
+                        <h3 className='text-white text-xl font_semibold  text-line' >Կապ մեզ հետ</h3>
                         <a href="" className='text-white text-base font-medium ' >Արշակունյաց 4, Երևան 0023, ՀՀ </a>
                         <div className='flex gap-[20px] mt-[20px] items-center'>
                             <a href=""> <img src={FacebookIcon} alt="arca logo"/></a>

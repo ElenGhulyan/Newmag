@@ -4,7 +4,7 @@ export default function SectionTitle({heading,title,url}:{heading:string,title:s
 
     return(
         <div className='flex justify-between '>
-            <h2 className=' text-3xl not-italic font-semibold'>{heading} </h2>
+            <h2 className=' text-3xl not-italic font_semibold'>{heading} </h2>
         <LoadMore url={url} title={title} />
         </div>
     )
