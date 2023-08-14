@@ -123,39 +123,39 @@ select {
 /*}*/
 
 
-
-.main {
-    font-family:Arial;
-    width:500px;
-    display:block;
-    margin:0 auto;
-}
-h3 {
-    background: #fff;
-    color: #3498db;
-    font-size: 36px;
-    line-height: 100px;
-    margin: 10px;
-    padding: 2%;
-    position: relative;
-    text-align: center;
-}
-.action{
-    display:block;
-    margin:100px auto;
-    width:100%;
-    text-align:center;
-}
-.action a {
-    display:inline-block;
-    padding:5px 10px;
-    background:#f30;
-    color:#fff;
-    text-decoration:none;
-}
-.action a:hover{
-    background:#000;
-}
 /*.slick-list{*/
 /*    transform: rotate(89deg) !important;*/
 /*}*/
+
+.vertical-clickable-thumbnail-slider-container {
+    display: flex;
+}
+
+.main-slider {
+    flex: 1;
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.thumbnail-slider {
+    width: 100px; /* Adjust as needed */
+}
+.slick-list{
+    width: 100% ;
+    max-width: 332px ;
+}
+
+.slick-slide  img {
+    width: 100% ;
+    max-width: 332px ;
+    /*object-fit: cover !important;*/
+}
+
+.slick-prev {
+    left: 40px !important ;
+    top: -13px !important;
+    margin-bottom: 15px;
+}
+.slick-next {
+    top: 103% !important;
+    left: 40px !important;
+}

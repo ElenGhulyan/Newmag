@@ -8,6 +8,6 @@ export default [
 
     {
         path: "/books",
-        element: <><Header/> <BooksPage /> <BooksSinglePage /> <Footer /> </>  ,
+        element: <><Header/> <BooksPage />  <Footer /> </>  ,
     },
 ]

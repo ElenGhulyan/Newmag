@@ -1,5 +1,11 @@
 import CatalogImg from "../../assets/images/catalog-img.png";
 
+import BookSliderImg from '../../assets/images/book-slider-img.png';
+import BookSliderImg1 from '../../assets/images/book-slider-img-1.png';
+import BookSliderImg2 from '../../assets/images/book-slider-img-2.png';
+import BookSliderImg3 from '../../assets/images/book-slider-img-3.png';
+
+
 export const BooksData = [
     {
         id: 1,
@@ -7,8 +13,25 @@ export const BooksData = [
         alt: 'images1',
         bookTitle: 'Լռակյաց հիվանդը ...',
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
+        description: '«Հեղափոխություն» գիրքը հրատարակվել է 2016 թվականի նոյեմբերի 24-ին։ Նույն թվականին Ֆրանսիայում դարձել է բեսթսելլեր՝ վաճառվելով ավելի քան երկու հարյուր հազար օրինակ։ Գիրքը թարգմանվել է եվրոպական գրեթե բոլոր լեզուներով։ <br/> Ֆրանսիայի պատմության ամենաերիտասարդ նախագահ Էմանուել Մակրոնը «Հեղափոխություն» գրքում պատմում է իր կյանքի պատմությունը և այն մասին, թե ինչն է իրեն ոգևորում։ Նա ներկայացնում է փոփոխվող նոր աշխարհում Ֆրանսիայի ապագայի վերաբերյալ․․․',
         price: "9500 ֏",
         count: 1,
+        bookSlider: [
+            BookSliderImg,
+            BookSliderImg1,
+            BookSliderImg2,
+            BookSliderImg3,
+        ],
+        attributes: [
+            {key: 'Օրիգինալ անունը', value: 'Revolution Française'},
+            {key: 'Կատեգորիան', value: 'Գիտահանրամատչելի'},
+            {key: 'ISBN', value: '978-9939-9217-0-9'},
+            {key: 'Հրատարակության տարին', value: '2019'},
+            {key: 'Էջերի քանակը', value: '332'},
+            {key: 'Չափսը', value: '14.5x22.3, կոշտ կազմ'},
+            {key: 'Թարգմանի', value: 'Թարգմանի'},
+        ],
+
     },
     {
         id: 2,
@@ -16,8 +39,24 @@ export const BooksData = [
         alt: 'images1',
         bookTitle: 'Լռակյաց հիվանդը ...',
         desc: "Քոնելն ու Մարիաննան մեծացել են միեւնույն փոքր, պրովինցի...",
+        description: 'cxcxcxc «Հեղափոխություն» գիրքը հրատարակվել է 2016 թվականի նոյեմբերի 24-ին։ Նույն թվականին Ֆրանսիայում դարձել է բեսթսելլեր՝ վաճառվելով ավելի քան երկու հարյուր հազար օրինակ։ Գիրքը թարգմանվել է եվրոպական գրեթե բոլոր լեզուներով։ <br/> Ֆրանսիայի պատմության ամենաերիտասարդ նախագահ Էմանուել Մակրոնը «Հեղափոխություն» գրքում պատմում է իր կյանքի պատմությունը և այն մասին, թե ինչն է իրեն ոգևորում։ Նա ներկայացնում է փոփոխվող նոր աշխարհում Ֆրանսիայի ապագայի վերաբերյալ․․․',
         price: "9500 ֏",
-        count: 0,
+        count: 1,
+        bookSlider: [
+            BookSliderImg,
+            BookSliderImg1,
+            BookSliderImg2,
+            BookSliderImg3,
+        ],
+        attributes: [
+            {key: 'Օրիգինալ անունը', value: 'Revolution Française'},
+            {key: 'Կատեգորիան', value: 'Գիտահանրամատչելի'},
+            {key: 'ISBN', value: '978-9939-9217-0-9'},
+            {key: 'Հրատարակության տարին', value: '2019'},
+            {key: 'Էջերի քանակը', value: '332'},
+            {key: 'Չափսը', value: '14.5x22.3, կոշտ կազմ'},
+            {key: 'Թարգմանի', value: 'Թարգմանի'},
+        ],
     },
     {
         id: 3,

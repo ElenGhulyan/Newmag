@@ -1,12 +1,18 @@
 import BookSectionImg from "../../assets/images/book-section-img.png";
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
+import {BooksData} from "../../mockData/BookData/booksData";
+
+
 const BookItem = ({item}:{item:any}) => {
+
+    // const { dynamicParam } = useParams<{ dynamicParam: string }>();
+
     return (
         <>
             <div className='px-[20px] py-[30px] border  rounded-[10px] bg-white shadow'>
                 <div className='w-full max-w-[140px] h-[200px] m-auto'>
-                    <Link to='/bookSinglePage'>
-                        <img src={BookSectionImg}  alt="" className='w-full h-full'/>
+                    <Link to={`/books/${item.id}`}  >
+                        <img  src={BookSectionImg}  alt="" className='w-full h-full'/>
                     </Link>
                 </div>
                 <div className='mt-[30px]'>
@@ -16,7 +22,6 @@ const BookItem = ({item}:{item:any}) => {
                 </div>
                 <div className='flex gap-[10px] mt-[15px]'>
                     <a href="" className='py-[11px] px-[27px] text-black text-center text-sm  font_semibold border border-black rounded-[10px]'>Դիտել</a>
-                    {/*<button className='bg-black py-[11px] px-[27px] text-white text-sm font-normal'></button>*/}
                     {item.count ?
                         <button className='bg-black py-[9px] px-[9px] rounded-[10px] w-full max-w-[42px] h-[42px]'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

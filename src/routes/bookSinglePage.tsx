@@ -6,7 +6,7 @@ import BooksSinglePage from "../pages/booksSinglePage";
 export default [
 
     {
-        path: "/bookSinglePage",
+        path: "/books/:bookId",
         element: <><Header/> <BooksSinglePage /> <Footer /> </>  ,
     },
 ]

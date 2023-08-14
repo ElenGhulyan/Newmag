@@ -7,6 +7,9 @@ import {useState} from "react";
 const Books = () => {
 
     const [items,SetItems] = useState([])
+
+
+
     return (
         <div className='content'>
             <div className='flex gap-[10px] items-center mb-[47px]'>
@@ -39,7 +42,7 @@ const Books = () => {
                 {
                     items.map((item) => {
                         return (
-                            <BookItem item={item}/>
+                            <BookItem item={item} />
                         )
                     })
                 }
