@@ -23,7 +23,7 @@ const BookInfo = ({bookId, bookDetails}:any) => {
                         <div>
                             <div>
                                 <h1 className='font-extrabold text-2xl text-[#000] mb-[15px]'>{bookDetails.bookTitle} </h1>
-                                <p className='text-sm font-normal text-[#4C4C4C] mb-[40px]'>{bookDetails.author} </p>
+                                <p className='text-sm font-normal text-[#4C4C4C] mb-[40px]'>{bookDetails.author.name} </p>
                             </div>
                             <div>
                                 <div className='border-r-[1px] w-full max-w-[512px] pr-[40px]'>
