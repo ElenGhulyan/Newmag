@@ -102,42 +102,21 @@ select {
     border-radius: 10px;
 }
 
-/* In your CSS file or component's styling */
 
-/*.slick-slider {*/
-/*    height: 400px; !* Adjust the height as needed *!*/
-/*}*/
-
-/*.slick-slide {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    height: 100px; !* Adjust the item height as needed *!*/
-/*    background-color: #f0f0f0;*/
-/*    border: 1px solid #ddd;*/
-/*}*/
-
-/*.slick-center {*/
-/*    transform: scale(1.1); !* Scale the center item for emphasis *!*/
-/*    transition: transform 0.3s ease-in-out;*/
-/*}*/
-
-
-/*.slick-list{*/
-/*    transform: rotate(89deg) !important;*/
-/*}*/
 
 .vertical-clickable-thumbnail-slider-container {
     display: flex;
+    margin-right: 20px;
 }
 
 .main-slider {
     flex: 1;
-    margin-right: 20px; /* Adjust as needed */
+    margin-right: 60px; /* Adjust as needed */
 }
 
 .thumbnail-slider {
-    width: 100px; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    max-width: 120px;
 }
 .slick-list{
     width: 100% ;
