@@ -10,7 +10,7 @@ const ObservableItem = ({item}:{item:any}) => {
                             <img src={item.src} className='w-full' alt={item.alt}/>
                         </div>
                         <div>
-                            <p className='mt-[21px] mb-[10px] text-black text-lg not-italic font-bold'>{item.bookTitle}</p>
+                            <p className='mt-[21px] mb-[10px] text-black text-lg not-italic font-bold'>{item.title}</p>
                             <p className='text-gray-700 text-base not-italic font-normal'>{item.author.name}</p>
                             <span className='mt-[10px] mb-[23px] text-orange-600 text-lg not-italic font-bold'>{item.price}</span>
                         </div>

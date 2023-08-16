@@ -17,7 +17,7 @@ const BookItem = ({item}:{item:any}) => {
                 </div>
                 <div className='mt-[30px]'>
                     <h2 className='text-base font-bold text-black '>{item.title} </h2>
-                    <p className='text-xs font-normal text-[#4C4C4C] my-[8px]'>{item.desc}</p>
+                    <p className='text-xs font-normal text-[#4C4C4C] my-[8px]'>{item.shortDesc}</p>
                     <span className='text-[#F34802] text-lg font-bold'>{item.price}</span>
                 </div>
                 <div className='flex gap-[10px] mt-[15px]'>

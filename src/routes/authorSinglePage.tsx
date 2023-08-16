@@ -6,7 +6,7 @@ import AuthorSinglePage from "../pages/authorSinglePage";
 export default [
 
     {
-        path: "/articles/:authorId",
+        path: "/authors/:authorId",
         element: <><Header/> <AuthorSinglePage /> <Footer /> </>  ,
     },
 ]

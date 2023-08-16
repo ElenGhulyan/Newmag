@@ -13,7 +13,7 @@ export const BooksData = [
         id: 1,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 1 ...',
+        title: 'Լռակյաց հիվանդը 1 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -74,7 +74,7 @@ export const BooksData = [
         id: 2,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 2 ...',
+        title: 'Լռակյաց հիվանդը 2 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -122,7 +122,7 @@ export const BooksData = [
         id: 3,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 3 ...',
+        title: 'Լռակյաց հիվանդը 3 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -156,7 +156,7 @@ export const BooksData = [
         id: 4,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 4 ...',
+        title: 'Լռակյաց հիվանդը 4 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -190,7 +190,7 @@ export const BooksData = [
         id: 5,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 5 ...',
+        title: 'Լռակյաց հիվանդը 5 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -224,7 +224,7 @@ export const BooksData = [
         id: 6,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 6 ...',
+        title: 'Լռակյաց հիվանդը 6 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -258,7 +258,7 @@ export const BooksData = [
         id: 7,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 7 ...',
+        title: 'Լռակյաց հիվանդը 7 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -291,7 +291,7 @@ export const BooksData = [
         id: 8,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 8 ...',
+        title: 'Լռակյաց հիվանդը 8 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -324,7 +324,7 @@ export const BooksData = [
         id: 9,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 9 ...',
+        title: 'Լռակյաց հիվանդը 9 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -357,7 +357,7 @@ export const BooksData = [
         id: 10,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 10 ...',
+        title: 'Լռակյաց հիվանդը 10 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -390,7 +390,7 @@ export const BooksData = [
         id: 11,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 11 ...',
+        title: 'Լռակյաց հիվանդը 11 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -423,7 +423,7 @@ export const BooksData = [
         id: 12,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 12 ...',
+        title: 'Լռակյաց հիվանդը 12 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -457,7 +457,7 @@ export const BooksData = [
         id: 13,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 13 ...',
+        title: 'Լռակյաց հիվանդը 13 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -490,7 +490,7 @@ export const BooksData = [
         id: 14,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 14 ...',
+        title: 'Լռակյաց հիվանդը 14 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -523,7 +523,7 @@ export const BooksData = [
         id: 15,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 15 ...',
+        title: 'Լռակյաց հիվանդը 15 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -556,7 +556,7 @@ export const BooksData = [
         id: 16,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 16 ...',
+        title: 'Լռակյաց հիվանդը 16 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -590,7 +590,7 @@ export const BooksData = [
         id: 17,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 17 ...',
+        title: 'Լռակյաց հիվանդը 17 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -623,7 +623,7 @@ export const BooksData = [
         id: 18,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 18 ...',
+        title: 'Լռակյաց հիվանդը 18 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -656,7 +656,7 @@ export const BooksData = [
         id: 19,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 19 ...',
+        title: 'Լռակյաց հիվանդը 19 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -690,7 +690,7 @@ export const BooksData = [
         id: 20,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 20 ...',
+        title: 'Լռակյաց հիվանդը 20 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -723,7 +723,7 @@ export const BooksData = [
         id: 21,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 21 ...',
+        title: 'Լռակյաց հիվանդը 21 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -756,7 +756,7 @@ export const BooksData = [
         id: 22,
         src: CatalogImg,
         alt: 'images1',
-        bookTitle: 'Լռակյաց հիվանդը 22 ...',
+        title: 'Լռակյաց հիվանդը 22 ...',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
