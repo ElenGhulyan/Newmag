@@ -12,7 +12,7 @@ const ReviewsItem = ({item}:{item:any}) => {
                             </div>
                             <div>
                                 <p className='text-[#000] text-[18px] font-medium leading-[30px] '>{item.desc}</p>
-                                <p className='mt-[20px] mb-[10px] text-[#000] text-[16px] leading-[26px] font-[600]'>{item.author}</p>
+                                <p className='mt-[20px] mb-[10px] text-[#000] text-[16px] leading-[26px] font-[600]'>{item.author.name}</p>
                                 <span className='text-[#4C4C4C] text-[16px] font-normal leading-[24px]'>{item.data}</span>
                             </div>
                         </div>

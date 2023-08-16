@@ -11,6 +11,9 @@ import Articles from "./articles";
 import BooksSinglePage from "./bookSinglePage";
 import HomePage from "../pages/homePage";
 import Footer from "../components/main/footer/footer";
+import authorSinglePage from "./authorSinglePage";
+import translatorSinglePage from "./translatorSinglePage";
+import articleSinglePage from "./articleSinglePage";
 
 export default createBrowserRouter([
     {
@@ -24,7 +27,10 @@ export default createBrowserRouter([
     ...translators,
     ...reviews,
     ...media,
-    ...BooksSinglePage
+    ...BooksSinglePage,
+    ...authorSinglePage,
+    ...translatorSinglePage,
+    ...articleSinglePage
 
 
 

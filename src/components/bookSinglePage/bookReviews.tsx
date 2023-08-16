@@ -10,19 +10,32 @@ const BookReviews = () => {
     const [firstName, setFirstName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [comment, setComment] = useState<string>('');
-    const [formErrors, setFormErrors] = useState<{ firstName: string; email: string; comment: string }>({
+    const [checkboxChecked, setCheckboxChecked] = useState<boolean>(false);
+    const [formErrors, setFormErrors] = useState<{
+        firstName: string;
+        email: string;
+        comment: string;
+        checkbox: string; // Add checkbox property here
+    }>({
         firstName: '',
         email: '',
-        comment: ''
+        comment: '',
+        checkbox: '', // Initialize the checkbox property
     });
 
     const handleFormSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
-        let errors: { firstName: string; email: string; comment: string } = {
+        let errors: {
+            firstName: string;
+            email: string;
+            comment: string;
+            checkbox: string; // Add checkbox property here
+        } = {
             firstName: '',
             email: '',
-            comment: ''
+            comment: '',
+            checkbox: '', // Initialize the checkbox property
         };
 
         if (firstName.trim() === '') {
@@ -36,11 +49,15 @@ const BookReviews = () => {
         if (comment.trim() === '') {
             errors.comment = 'Կարծիքը պարտադիր է';
         }
+        if (!checkboxChecked) {  // Add this line to check if checkbox is checked
+            errors.checkbox = 'Խնդրում եմ համաձայնեք պայմաններին';
+        }
 
-        if (Object.keys(errors).length === 0) {
+        if (Object.keys(errors).every(key => !errors[key as keyof typeof errors])) {
             setFirstName('');
             setEmail('');
             setComment('');
+            setCheckboxChecked(false);  // Reset the checkbox state
         } else {
             setFormErrors(errors);
         }
@@ -86,7 +103,7 @@ const BookReviews = () => {
                                     onChange={(e) => setFirstName(e.target.value)}
                                     className='py-[16px] pl-[22px] bg-white w-full max-w-[480px]'
                                 />
-                                {formErrors.firstName && <p className='text-red-500'>{formErrors.firstName}</p>}
+                                {formErrors.firstName && <p className='text-red-500 mt-[-20px]'>{formErrors.firstName}</p>}
 
                                 <input
                                     placeholder="Էլեկտրոնային հասցե *
@@ -95,7 +112,7 @@ const BookReviews = () => {
                                     onChange={(e) => setEmail(e.target.value)}
                                     className='py-[16px] pl-[22px] bg-white w-full max-w-[480px]'
                                 />
-                                {formErrors.email && <p className='text-red-500'>{formErrors.email}</p>}
+                                {formErrors.email && <p className='text-red-500 mt-[-20px]'>{formErrors.email}</p>}
 
                                 <textarea
                                     value={comment}
@@ -103,16 +120,26 @@ const BookReviews = () => {
                                     className='py-[16px] pl-[22px] w-full max-w-[480px] h-[205px] bg-white'
                                     placeholder='Կարծիք *'
                                 />
-                                {formErrors.comment && <p className='text-red-500'>{formErrors.comment}</p>}
+                                {formErrors.comment && <p className='text-red-500 mt-[-20px]'>{formErrors.comment}</p>}
 
 
                                 <div className="flex items-center mb-4">
-                                    <input id="default-checkbox" type="checkbox" value=""
-                                           className="w-5 h-5  " />
+                                    <input
+                                        id="default-checkbox"
+                                        type="checkbox"
+                                        value=""
+                                        className="w-5 h-5 accent-[#F34802]"
+                                        checked={checkboxChecked}
+                                        onChange={() => setCheckboxChecked(prevChecked => !prevChecked)}
+                                    />
+
                                         <label htmlFor="default-checkbox"
                                                className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                                             Կարդացեք և համաձայնվեք օգտագործման պայմանների հետ</label>
+
                                 </div>
+                                {formErrors.checkbox && <p className='text-red-500 mt-[-30px]'>{formErrors.checkbox}</p>}
+
 
                                 <button
                                     type="submit"
