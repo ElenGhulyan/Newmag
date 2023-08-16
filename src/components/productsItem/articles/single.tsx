@@ -2,6 +2,7 @@ import {useParams} from "react-router-dom";
 import {TranslatorsData} from "../../../mockData/translatorData/translatorsData";
 import React from "react";
 import {ArticlesData} from "../../../mockData/articlesData/articlesData";
+import parse from 'html-react-parser';
 
 const ArticleSinglePage = () => {
 
@@ -20,7 +21,7 @@ const ArticleSinglePage = () => {
                     <div className=' w-full bg-[#D8DFE9] max-w-[333px] h-[540px]'>
                         <img src={articleData.img} alt={articleData.alt} className='w-full'/>
                     </div>
-
+                    {articleData.description && parse(articleData.description)}
                 </div>
             ) : (
                 <div className='flex gap-[40px] content '>
