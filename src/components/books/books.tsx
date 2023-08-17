@@ -10,6 +10,7 @@ const Books = () => {
 
 
 
+
     return (
         <div className='content'>
             <div className='flex gap-[10px] items-center mb-[47px]'>
@@ -36,8 +37,8 @@ const Books = () => {
                     </select>
                 </div>
             </div>
-            
-            
+
+
             <div className='w-full grid grid-cols-6 gap-[30px] mt-[65px]'>
                 {
                     items.map((item) => {
@@ -52,7 +53,7 @@ const Books = () => {
 
             <Pagination data={BooksData} setActiveItems={(items:any)=>{
                 SetItems(items)}} />
-            
+
         </div>
     )
 }

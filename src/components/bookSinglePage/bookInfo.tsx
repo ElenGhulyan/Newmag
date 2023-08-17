@@ -1,10 +1,7 @@
 import {BooksData} from '../../mockData/BookData/booksData'
 import {useParams} from "react-router-dom";
 import VerticalSlider from "./VerticalSlider";
-import FacebookIcon from "../../assets/icons/facebook-black.svg";
-import TwitterIcon from "../../assets/icons/twwiter-black.svg";
-import LinkedinIcon from "../../assets/icons/linkedin-black.svg";
-import YoutubeIcon from "../../assets/icons/email-logo.svg";
+
 
 const BookInfo = ({bookId, bookDetails}:any) => {
 

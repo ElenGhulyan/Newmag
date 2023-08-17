@@ -26,9 +26,7 @@
     border: 0.5px solid #D8DFE9;
     background: #FFF;
 }
-/*.active{*/
-/*    color: red;*/
-/*}*/
+
 
 .modal{
     display: inline-table;
@@ -45,8 +43,6 @@
 .overflow-bg {
     position: fixed;
     z-index: 10;
-    /* width: 1200px; */
-    /* height: 100%; */
     top: 0;
     right: 0;
     left: 0;
@@ -140,6 +136,13 @@ select {
 }
 
 
+
+
+
+.basket-icon.activeBtn,
+.basket-icon:hover{
+    background-color: red;
+}
 
 
 

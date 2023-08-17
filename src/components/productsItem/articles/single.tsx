@@ -1,33 +1,33 @@
 import {useParams} from "react-router-dom";
 import {TranslatorsData} from "../../../mockData/translatorData/translatorsData";
-import React from "react";
+import React, {useState} from "react";
 import {ArticlesData} from "../../../mockData/articlesData/articlesData";
-import parse from 'html-react-parser';
+import ArticleInfo from "../../articleSinglePage/articleInfo";
+import ArticleIte from "./articleItem";
+
 
 const ArticleSinglePage = () => {
 
-    const {articleId} = useParams<{ articleId: any }>();
-    const articleData = ArticlesData.find((item:any) => {
-        return item.id == articleId;
-    })
+
+
 
 
 
     return  (
 
         <div className='content '>
-            {articleData ? (
-                <div className='flex gap-[100px] py-[60px] '>
-                    <div className=' w-full bg-[#D8DFE9] max-w-[333px] h-[540px]'>
-                        <img src={articleData.img} alt={articleData.alt} className='w-full'/>
-                    </div>
-                    {articleData.description && parse(articleData.description)}
-                </div>
-            ) : (
-                <div className='flex gap-[40px] content '>
-                    404 not found
-                </div>
-            ) }
+            <ArticleInfo />
+
+            <div className='w-full grid grid-cols-5 gap-[30px] mt-[65px] mb-[100px]'>
+                {ArticlesData.map((item)=>{
+                    return (
+                        <ArticleIte item={item} />
+
+                    )
+                }).splice(0,5)}
+            </div>
+
+
 
         </div>
 

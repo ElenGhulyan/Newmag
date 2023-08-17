@@ -8,7 +8,6 @@ import {ArticlesData} from "../mockData/articlesData/articlesData";
 const Articles = () => {
     const [items,SetItems] = useState([])
 
-    console.log(items)
 
     return (
         <div className='content'>
@@ -28,12 +27,9 @@ const Articles = () => {
             <div className='w-full grid grid-cols-5 gap-[30px] mt-[65px]'>
                 {
                     items.map((item) => {
-                        console.log(item)
-
                         return (
 
                             <ArticleIte item={item} />
-
                         )
                     })
                 }
