@@ -1,15 +1,17 @@
 import BookItem from "../productsItem/bookItem";
 import {BooksData} from '../../mockData/BookData/booksData'
 import Pagination from "../pagination";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import ShopingCart from "../../pages/shopingCart";
 
 
+interface Book {
+    id: number;
+    title: string;
+}
 const Books = () => {
 
-    const [items,SetItems] = useState([])
-
-
-
+    const [items, SetItems] = useState<Book[]>(BooksData);
 
     return (
         <div className='content'>
@@ -49,7 +51,6 @@ const Books = () => {
                 }
 
             </div>
-
 
             <Pagination data={BooksData} setActiveItems={(items:any)=>{
                 SetItems(items)}} />

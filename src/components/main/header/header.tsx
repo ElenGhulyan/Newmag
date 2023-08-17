@@ -8,6 +8,8 @@ const Header = () => {
 
     const [open, setOpen] = useState(false)
 
+    const [show, setShow] = useState(false)
+
     const [cartOpen, setCartOpen ] = useState(false)
 
     return (
@@ -17,7 +19,7 @@ const Header = () => {
                     <div className="logo-header">
                         <Link to='/'><img src={HeaderLogo} alt="header logo"/></Link>
                     </div>
-                    <nav className="header-menu">
+                    <nav   className={`header-menu ${show && 'menu-show'}`}>
                         <ul className="flex gap-x-10">
                             <li className='menu-about-us flex gap-[5px] items-center relative'>
                                 <Link to='/about_us'>Մեր մասին</Link>
@@ -51,12 +53,25 @@ const Header = () => {
                             <li><Link to='/media'>Մեդիա</Link></li>
                         </ul>
                     </nav>
-                    <div className="flex gap-[30px]">
+                    <div className=" header-icons flex gap-[30px] items-center	">
+
+                        <div className='burger-icon '
+                        onClick={()=>{
+                        setShow(!show)
+                        }
+                        }>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="4" width="21" height="2" rx="1" fill="black"/>
+                                <rect x="9" y="11" width="14" height="2" rx="1" fill="black"/>
+                                <rect x="2" y="18" width="21" height="2" rx="1" fill="black"/>
+                            </svg>
+                        </div>
+
+
                         <select className="border-0 text-black text-lg font-medium" name="" id="">
                             <option value="En">En</option>
                             <option value="Am">Am</option>
                         </select>
-
 
 
 
