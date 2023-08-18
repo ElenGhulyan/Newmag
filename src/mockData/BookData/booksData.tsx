@@ -13,7 +13,7 @@ export const BooksData = [
         id: 1,
         src: CatalogImg,
         alt: 'images1',
-        title: 'Լռակյաց հիվանդը 1 ...',
+        title: 'Լռակյաց հիվանդը 1',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,
@@ -74,7 +74,7 @@ export const BooksData = [
         id: 2,
         src: CatalogImg,
         alt: 'images1',
-        title: 'Լռակյաց հիվանդը 2 ...',
+        title: 'Լռակյաց հիվանդը 2',
         author: {
             name: 'Էմանուել Մակրոն11',
             img: AuthorImg,

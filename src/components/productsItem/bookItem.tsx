@@ -3,7 +3,7 @@ import {Link, useParams} from "react-router-dom";
 import {BooksData} from "../../mockData/BookData/booksData";
 import {ArticlesData} from "../../mockData/articlesData/articlesData";
 import {useRef, useState} from "react";
-import ShopingCart from "../../pages/shopingCart";
+import ShopingCart from "../payment/shopingCart";
 
 
 
@@ -14,34 +14,44 @@ const BookItem = ({ item }: { item: any }) => {
         return bookItem.id == articleId;
     });
 
+    const [open, setOpen] = useState(false)
+
     const addToCart = () => {
 
         let existingCartItems = JSON.parse(localStorage.getItem('cart') || '[]');
         const isItemInCart = existingCartItems.find((cartItem:any) => cartItem.id === item.id);
 
+
+
         let updatedCart;
         if (isItemInCart) {
+
             updatedCart = existingCartItems.map((existingItem:any) => {
+
                 if(existingItem.id == item.id) {
                     return {
                         id: existingItem.id,
                         title: existingItem.title,
                         image: existingItem.image,
                         count: existingItem.count+=1,
-                        price: existingItem.price
+                        price: existingItem.price,
+                        author:existingItem.author
                     }
                 }
                 return existingItem;
             })
         } else {
+
             updatedCart = [...existingCartItems, {
                 id: item.id,
                 title: item.title,
                 image: item.src,
                 count: 1,
-                price: item.price
+                price: item.price,
+                author:item.author
             }];
         }
+        console.log(isItemInCart)
 
         localStorage.setItem('cart', JSON.stringify(updatedCart));
     };

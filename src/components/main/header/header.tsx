@@ -55,7 +55,7 @@ const Header = () => {
                     </nav>
                     <div className=" header-icons flex gap-[30px] items-center	">
 
-                        <div className='burger-icon '
+                        <div className='burger-icon hidden'
                         onClick={()=>{
                         setShow(!show)
                         }
@@ -90,7 +90,7 @@ const Header = () => {
 
 
                             {cartOpen && (
-                                <div className='absolute top-[50px] right-0 w-full max-w-[450px] h-[200px] bg-red-800'>
+                                <div className=''>
 
                                 </div>
                             ) }

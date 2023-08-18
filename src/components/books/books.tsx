@@ -2,7 +2,7 @@ import BookItem from "../productsItem/bookItem";
 import {BooksData} from '../../mockData/BookData/booksData'
 import Pagination from "../pagination";
 import {useEffect, useState} from "react";
-import ShopingCart from "../../pages/shopingCart";
+import ShopingCart from "../payment/shopingCart";
 
 
 interface Book {
