@@ -9,10 +9,6 @@ import ArticleIte from "./articleItem";
 const ArticleSinglePage = () => {
 
 
-
-
-
-
     return  (
 
         <div className='content '>

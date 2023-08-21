@@ -6,8 +6,9 @@ import ArticleSinglePage from "../components/productsItem/articles/single";
 
 export default [
 
-    {
-        path: "/articles/:articleId",
-        element: <><Header/> <ArticleSinglePage /> <Footer /> </>  ,
-    },
+    // {
+    //     path: "/articles/:articleId",
+    //     element: <><Header/> <ArticleSinglePage /> <Footer /> </>  ,
+    // },
+    //
 ]

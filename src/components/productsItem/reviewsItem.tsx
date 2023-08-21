@@ -1,20 +1,48 @@
 import {MediaSharingData} from "../../mockData/HomeData/mediaSharingData";
 import reviewsImg from '../../assets/images/reviews-img.png'
 import {ReviewsData} from '../../mockData/HomeData/reviewsData'
+import {Link} from "react-router-dom";
 
 const ReviewsItem = ({item}:{item:any}) => {
     return (
         <>
 
-                        <div className='flex gap-[40px] items-center '>
-                            <div className='w-full max-w-[149px]'>
-                                <img src={item.src} alt={item.alt}/>
+                        <div className=' '>
+
+                            <div className='flex gap-[40px]'>
+                                <div className='w-full max-w-[100px] h-[163px]'>
+                                    <img src={item.src} alt="" className='w-full'/>
+                                </div>
+                                <div>
+                                    <h3 className='text-2xl font-extrabold'>{item.title}</h3>
+                                    <p>{item.author && item.author.name}</p>
+                                </div>
                             </div>
-                            <div>
-                                <p className='text-[#000] text-[18px] font-medium leading-[30px] '>{item.desc}</p>
-                                <p className='mt-[20px] mb-[10px] text-[#000] text-[16px] leading-[26px] font-[600]'>{item.author.name}</p>
-                                <span className='text-[#4C4C4C] text-[16px] font-normal leading-[24px]'>{item.data}</span>
-                            </div>
+
+
+                            {item.reviews && item.reviews.map( (review:any) => {
+                                return (
+                                    <div className='flex gap-[14px]'>
+                                        <div>
+                                            <img src={review.avatar} alt=""/>
+                                        </div>
+                                        <div>
+                                            <h4>{review.name}</h4>
+                                            <p>{review.comment}</p>
+                                        </div>
+
+                                    </div>
+                                )
+                            }).splice(0,4)}
+
+                            <p>
+                                <Link to={`/reviews/${item.id}`}>tesnel avelin</Link>
+                            </p>
+
+
+
+
+
                         </div>
 
         </>

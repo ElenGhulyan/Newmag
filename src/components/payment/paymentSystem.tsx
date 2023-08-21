@@ -36,26 +36,26 @@ const PaymentSystem = () => {
                             <h4 className='mt-[40px] text-lg font_semibold text-black '>Վճարման եղանակ</h4>
                             <div className='flex gap-[16px] mt-[30px]'>
                                 <div className='flex gap-[10px]'>
-                                    <input type="checkbox" id='noNecessary'/>
-                                    <label htmlFor="noNecessary">
+                                    <input type="checkbox" id='arca'/>
+                                    <label htmlFor="arca">
                                         <img src={Arca} alt="Arca"/>
                                     </label>
                                 </div>
                                 <div className='flex gap-[10px]'>
-                                    <input type="checkbox" id='standard'/>
-                                    <label htmlFor="standard">
+                                    <input type="checkbox" id='idram'/>
+                                    <label htmlFor="idram">
                                         <img src={Idram} alt="iDram"/>
                                     </label>
                                 </div>
                                 <div className='flex gap-[10px]'>
-                                    <input type="checkbox" id='premium'/>
-                                    <label htmlFor="premium">
+                                    <input type="checkbox" id='telcell'/>
+                                    <label htmlFor="telcell">
                                         <img src={Telcell} alt="telcel"/>
                                     </label>
                                 </div>
                                 <div className='flex gap-[10px]'>
-                                    <input type="checkbox" id='premium'/>
-                                    <label htmlFor="premium">
+                                    <input type="checkbox" id='fcfpay'/>
+                                    <label htmlFor="fcfpay">
                                         <img src={FcfPay} alt="FcF Pay "/>
                                     </label>
                                 </div>
