@@ -148,6 +148,9 @@ select {
 .basket-icon:hover{
     background-color: red;
 }
+input.is-invalid {
+    border-color: red;
+}
 
 @media (max-width: 1400px) {
     .header-menu ul {

@@ -2,8 +2,23 @@ import Arca from '../../assets/images/svg/arca.svg'
 import Idram from '../../assets/images/svg/idram.svg'
 import Telcell from '../../assets/images/svg/telcell.svg'
 import FcfPay from '../../assets/images/svg/fcfPay.svg'
+import {useCheckoutContext} from "../validation/CheckoutContext";
+import React from "react";
 
 const PaymentSystem = () => {
+    const { data, setData, invalidData,  setInvalidData} = useCheckoutContext();
+
+    const handleCheckout = () => {
+        for (const field in data) {
+            let isInValid = '';
+            if (data[field as keyof typeof data].trim() === '') {
+                isInValid = 'Field is required';
+            }
+            setInvalidData((prevData) => ({ ...prevData, [field]: isInValid }));
+        }
+
+    };
+
 
     return (
         <>
@@ -83,6 +98,9 @@ const PaymentSystem = () => {
                             <p className='text-lg font-bold'>14400֏</p>
                         </div>
                     </div>
+                    <button onClick={handleCheckout}>
+                        Pay
+                    </button>
                 </div>
 
             </div>

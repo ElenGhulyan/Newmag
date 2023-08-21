@@ -1,22 +1,37 @@
-import {useContext} from "react";
+import React from 'react';
+import { useCheckoutContext } from '../validation/CheckoutContext';
 
+const PaymentDetails: React.FC = () => {
+    const { data, setData, invalidData,  setInvalidData} = useCheckoutContext();
 
-const PaymentDetails = () => {
-
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = e.target;
+        setInvalidData((prevData) => ({ ...prevData, [name]: value == '' ? 'Field is required' : '' }));
+        setData((prevData) => ({ ...prevData, [name]: value }));
+    };
 
     return (
         <>
             <div className='w-full max-w-[1116px] filter-box bg-white mt-[60px] mb-[100px] rounded-b-[20px]'>
                 <h2 className='text-xl text-white py-[20px] pl-[60px] bg-[#F34802] rounded-t-[20px]'>Վճարման տվյալները</h2>
-
                 <div className='py-[60px] px-[60px]'>
                     <div className='grid grid-cols-2 gap-[40px] mt-[60px] mb-[20px]'>
                         <input
-                            className='py-[17px] pl-[20px] w-full max-w-[478px] border border-[#D8DFE9] rounded-[10px] placeholder:text-base placeholder:text-[#4C4C4C] placeholder:leading-[26px]'
-                            type='text' name='name' placeholder='Անուն *'></input>
+                            className={invalidData.name != '' ? 'is-invalid py-[17px] pl-[20px] w-full max-w-[478px] border border-[#D8DFE9] rounded-[10px] placeholder:text-base placeholder:text-[#4C4C4C] placeholder:leading-[26px]' : 'py-[17px] pl-[20px] w-full max-w-[478px] border border-[#D8DFE9] rounded-[10px] placeholder:text-base placeholder:text-[#4C4C4C] placeholder:leading-[26px]'}
+                            type='text'
+                            name='name'
+                            value={data.name}
+                            onChange={handleInputChange}
+                            placeholder='Անուն *'
+                        />
+                        <p>{invalidData.name}</p>
                         <input
                             className='py-[17px] pl-[20px] w-full max-w-[478px]  border border-[#D8DFE9] rounded-[10px] placeholder:text-base placeholder:text-[#4C4C4C] placeholder:leading-[26px]'
-                            type='text' name='name' placeholder='Ազգանուն *'></input>
+                            type='text'
+                            name='surname'
+                            value={data.surname}
+                            onChange={handleInputChange}
+                            placeholder='Ազգանուն *' />
                     </div>
                     <input
                         className=' py-[17px] pl-[20px] w-full max-w-[996px] border border-[#D8DFE9] rounded-[10px] placeholder:text-base placeholder:text-[#4C4C4C] placeholder:leading-[26px]'
@@ -42,7 +57,11 @@ const PaymentDetails = () => {
                                className='py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]'/>
                         <input type="text" placeholder='Հեռախոս *'
                                className='py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]'/>
-                        <input type="text" placeholder='Էլեկտրենային հասցե *'
+                        <input type="text"
+                               placeholder='Էլեկտրենային հասցե *'
+                               name='email'
+                               value={data.email}
+                               onChange={handleInputChange}
                                className='py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]'/>
 
                     </div>
@@ -59,7 +78,7 @@ const PaymentDetails = () => {
                         <div className="flex items-center mb-4">
                             <input id="default-checkbox" type="checkbox"  className="w-5 h-5 accent-[#F34802]" value=""/>
                             <label htmlFor="default-checkbox"  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300" >Կարդացեք
-                            և համաձայնվեք օգտագործման պայմանների հետ</label></div>
+                                և համաձայնվեք օգտագործման պայմանների հետ</label></div>
                     </div>
 
                 </div>
@@ -67,7 +86,7 @@ const PaymentDetails = () => {
 
             </div>
         </>
-    )
-}
+    );
+};
 
-export default PaymentDetails
+export default PaymentDetails;
