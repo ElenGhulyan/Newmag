@@ -5,11 +5,7 @@ import {Link, useParams} from "react-router-dom";
 import {BooksData} from "../../mockData/BookData/booksData";
 
 const ReviewsItem = ({item}:{item:any}) => {
-    const {reviewId} = useParams<{ reviewId: any }>();
-    const reviewItem = BooksData.find((item:any) => {
-        return item.id == reviewId;
-    })
-
+   
     return (
         <>
 

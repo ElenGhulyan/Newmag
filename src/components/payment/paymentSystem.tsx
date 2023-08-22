@@ -4,25 +4,33 @@ import Telcell from '../../assets/images/svg/telcell.svg'
 import FcfPay from '../../assets/images/svg/fcfPay.svg'
 import {useCheckoutContext} from "../validation/CheckoutContext";
 import React from "react";
+import errorMessages from "../../lang/am/messages.json";
 
 const PaymentSystem = () => {
     const { data, setData, invalidData,  setInvalidData} = useCheckoutContext();
 
     const handleCheckout = () => {
         for (const field in data) {
-            let isInValid = '';
+            let errMsg = '';
+            const value = data[field as keyof typeof data].trim();
 
-            if (data[field as keyof typeof data].trim() === '') {
-                isInValid = 'Field is required';
+            switch (field) {
+                case "name": {
+                    if(value.length == 0) {
+                        errMsg = errorMessages[field]["required"];
+                    }else if(value.length < 4) {
+                        errMsg = errorMessages[field]["minLength"];
+                    } else if(value.length > 10) {
+                        errMsg = errorMessages[field]["maxLength"];
+                    }
+                    break;
+                }
+                case "surname": {
+                    break;
+                }
+            }
 
-            }
-            if(data.name && data.name.length < 5){
-                isInValid = 'ssss'
-            }
-            if(data.surname && data.surname.length < 7){
-                isInValid = 'addd'
-            }
-            setInvalidData((prevData) => ({ ...prevData, [field]: isInValid }));
+            setInvalidData((prevData) => ({ ...prevData, [field]: errMsg }));
         }
 
     };

@@ -1,12 +1,32 @@
 import React from 'react';
 import { useCheckoutContext } from '../validation/CheckoutContext';
+import errorMessages from '../../lang/am/messages.json';
 
 const PaymentDetails: React.FC = () => {
     const { data, setData, invalidData,  setInvalidData} = useCheckoutContext();
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
-        setInvalidData((prevData) => ({ ...prevData, [name]: value == '' ? 'Field is required' : '' }));
+
+        let errMsg = '';
+
+        switch (name) {
+            case "name": {
+                if(value.length == 0) {
+                    errMsg = errorMessages[name]["required"];
+                }else if(value.length < 4) {
+                    errMsg = errorMessages[name]["minLength"];
+                } else if(value.length > 10) {
+                    errMsg = errorMessages[name]["maxLength"];
+                }
+                break;
+            }
+            case "surname": {
+                break;
+            }
+        }
+
+        setInvalidData((prevData) => ({ ...prevData, [name]: errMsg }));
         setData((prevData) => ({ ...prevData, [name]: value }));
     };
 

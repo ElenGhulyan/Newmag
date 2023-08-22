@@ -1,0 +1,9 @@
+{
+  "name": {
+    "required": "ԱՆուն պարտադիր է",
+    "minLength":  "ԱՆուն min length is 4 digit",
+    "maxLength": "ԱՆուն max Length is 10"
+  },
+  "surname": "Ազգանունը պարտադիր է",
+  "email": "Please enter a valid email address."
+}

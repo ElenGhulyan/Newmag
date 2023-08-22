@@ -1,0 +1,10 @@
+{
+  "name": {
+    "required": "Please enter a valid name.",
+    "minLength":  "Name min length is 4 digit",
+    "maxLength": "Name max Length is 10"
+  },
+  "surname": "Please enter a valid Surname.",
+  "surnameLength": "Please enter a valid Surname 7 length.",
+  "email": "Please enter a valid email address."
+}
