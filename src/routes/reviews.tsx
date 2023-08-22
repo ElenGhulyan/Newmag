@@ -16,4 +16,9 @@ export  default [
         path: "/reviews/:reviewId",
         element: <><Header/> <ReviewSinglePage  /> <Footer /> </>  ,
     },
+    {
+        path: "/reviews/:reviewId/:reviewId",
+        element: <><Header/> <ReviewSinglePage  /> <Footer /> </>  ,
+    },
+
 ]

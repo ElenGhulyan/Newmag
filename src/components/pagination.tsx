@@ -42,7 +42,7 @@ const Pagination = ({data, setActiveItems}: any) => {
                     <button
                         key={index}
                         onClick={() => handlePageChange(index + 1)}
-                        className={currentPage === index + 1 ? 'active' : `text-lg font-medium text-[#4C4C4C]`}
+                        className={currentPage === index + 1 ? 'active-btn' : `text-lg font-medium text-[#4C4C4C]`}
                     >
                         {index + 1}
                     </button>

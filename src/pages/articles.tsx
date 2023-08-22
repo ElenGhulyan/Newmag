@@ -8,7 +8,6 @@ import {ArticlesData} from "../mockData/articlesData/articlesData";
 const Articles = () => {
     const [items,SetItems] = useState([])
 
-
     return (
         <div className='content'>
             <div className='flex gap-[10px] items-center mb-[47px]'>

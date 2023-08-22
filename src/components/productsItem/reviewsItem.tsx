@@ -1,9 +1,15 @@
 import {MediaSharingData} from "../../mockData/HomeData/mediaSharingData";
 import reviewsImg from '../../assets/images/reviews-img.png'
 import {ReviewsData} from '../../mockData/HomeData/reviewsData'
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
+import {BooksData} from "../../mockData/BookData/booksData";
 
 const ReviewsItem = ({item}:{item:any}) => {
+    const {reviewId} = useParams<{ reviewId: any }>();
+    const reviewItem = BooksData.find((item:any) => {
+        return item.id == reviewId;
+    })
+
     return (
         <>
 
@@ -23,9 +29,12 @@ const ReviewsItem = ({item}:{item:any}) => {
                             {item.reviews && item.reviews.map( (review:any) => {
                                 return (
                                     <div className='flex gap-[14px]'>
-                                        <div>
-                                            <img src={review.avatar} alt=""/>
-                                        </div>
+
+                                        <Link to={`/reviews/${item.id}/${item.id}`}>
+                                            <div>
+                                                <img src={review.avatar} alt=""/>
+                                            </div>
+                                        </Link>
                                         <div>
                                             <h4>{review.name}</h4>
                                             <p>{review.comment}</p>
@@ -36,12 +45,8 @@ const ReviewsItem = ({item}:{item:any}) => {
                             }).splice(0,4)}
 
                             <p>
-                                <Link to={`/reviews/${item.id}`}>tesnel avelin</Link>
+                                <Link to={`/reviews/${item.id}`}>Տեսնել ավելին</Link>
                             </p>
-
-
-
-
 
                         </div>
 

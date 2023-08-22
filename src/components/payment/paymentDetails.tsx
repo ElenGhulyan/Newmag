@@ -10,28 +10,42 @@ const PaymentDetails: React.FC = () => {
         setData((prevData) => ({ ...prevData, [name]: value }));
     };
 
+
+
     return (
         <>
             <div className='w-full max-w-[1116px] filter-box bg-white mt-[60px] mb-[100px] rounded-b-[20px]'>
                 <h2 className='text-xl text-white py-[20px] pl-[60px] bg-[#F34802] rounded-t-[20px]'>Վճարման տվյալները</h2>
                 <div className='py-[60px] px-[60px]'>
                     <div className='grid grid-cols-2 gap-[40px] mt-[60px] mb-[20px]'>
-                        <input
-                            className={invalidData.name != '' ? 'is-invalid py-[17px] pl-[20px] w-full max-w-[478px] border border-[#D8DFE9] rounded-[10px] placeholder:text-base placeholder:text-[#4C4C4C] placeholder:leading-[26px]' : 'py-[17px] pl-[20px] w-full max-w-[478px] border border-[#D8DFE9] rounded-[10px] placeholder:text-base placeholder:text-[#4C4C4C] placeholder:leading-[26px]'}
-                            type='text'
-                            name='name'
-                            value={data.name}
-                            onChange={handleInputChange}
-                            placeholder='Անուն *'
-                        />
-                        <p>{invalidData.name}</p>
-                        <input
-                            className='py-[17px] pl-[20px] w-full max-w-[478px]  border border-[#D8DFE9] rounded-[10px] placeholder:text-base placeholder:text-[#4C4C4C] placeholder:leading-[26px]'
-                            type='text'
-                            name='surname'
-                            value={data.surname}
-                            onChange={handleInputChange}
-                            placeholder='Ազգանուն *' />
+
+                        <div>
+                            <input
+                                className={invalidData.name != '' ? 'is-invalid py-[17px] pl-[20px] w-full max-w-[478px] border border-[#D8DFE9] rounded-[10px] placeholder:text-base placeholder:text-[#4C4C4C] placeholder:leading-[26px]' : 'py-[17px] pl-[20px] w-full max-w-[478px] border border-[#D8DFE9] rounded-[10px] placeholder:text-base placeholder:text-[#4C4C4C] placeholder:leading-[26px]'}
+                                type='text'
+                                name='name'
+                                value={data.name}
+                                onChange={handleInputChange}
+                                placeholder='Անուն *'
+                            />
+                            <p>{invalidData.name}</p>
+                        </div>
+
+
+                        <div>
+                            <input
+                                className= { invalidData.surname != '' ? 'is-invalid py-[17px] pl-[20px] w-full max-w-[478px]  border border-[#D8DFE9] rounded-[10px] placeholder:text-base placeholder:text-[#4C4C4C] placeholder:leading-[26px]' : 'py-[17px] pl-[20px] w-full max-w-[478px] border border-[#D8DFE9] rounded-[10px] placeholder:text-base placeholder:text-[#4C4C4C] placeholder:leading-[26px]'}
+                                type='text'
+                                name='surname'
+                                value={data.surname}
+                                onChange={handleInputChange}
+                                placeholder='Ազգանուն *' />
+                            <p>{invalidData.surname}</p>
+                            {/*{invalidData.surname && <p className="error-message">{invalidData.surname}</p>}*/}
+                        </div>
+
+
+
                     </div>
                     <input
                         className=' py-[17px] pl-[20px] w-full max-w-[996px] border border-[#D8DFE9] rounded-[10px] placeholder:text-base placeholder:text-[#4C4C4C] placeholder:leading-[26px]'
@@ -48,21 +62,36 @@ const PaymentDetails: React.FC = () => {
 
                     <div className='grid grid-cols-3 gap-[40px] mb-[20px]'>
                         <input type="text" placeholder='Քաղաք/Վարչական շրջան *'
-                               className='py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]'/>
+                               name='city'
+                               value={data.city}
+                               onChange={handleInputChange}
+                               className={ invalidData.city != '' ? ' is-invalid py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]' :'py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]' }/>
                         <input type="text" placeholder='Տան համար և փողոց *'
-                               className='py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]'/>
+                               name='street'
+                               value={data.street}
+                               onChange={handleInputChange}
+                               className={ invalidData.street != '' ? ' is-invalid py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]' : 'py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]' }/>
+
                         <input type="text" placeholder='Բնակարան, կացարան և ալն․․․'
                                className='py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]'/>
+
                         <input type="text" placeholder='Փոստային կոդ *'
-                               className='py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]'/>
-                        <input type="text" placeholder='Հեռախոս *'
-                               className='py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]'/>
+                               name='postalCode'
+                               value={data.postalCode}
+                               onChange={handleInputChange}
+                               className={ invalidData.street != '' ? ' is-invalid py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]' : 'py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]' }/>
+                        <input type="text"
+                               placeholder='Հեռախոս *'
+                               name='tell'
+                               value={data.tell}
+                               onChange={handleInputChange}
+                               className={ invalidData.street != '' ? ' is-invalid py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]' : 'py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]'}/>
                         <input type="text"
                                placeholder='Էլեկտրենային հասցե *'
                                name='email'
                                value={data.email}
                                onChange={handleInputChange}
-                               className='py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]'/>
+                               className={ invalidData.street != '' ? ' is-invalid py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]' : 'py-[17px] pl-[20px] bg-white placeholder:text-[#4C4C4C] placeholder:leading-[26px] w-full max-w-[305px]  border border-[#D8DFE9] rounded-[10px]' }/>
 
                     </div>
 

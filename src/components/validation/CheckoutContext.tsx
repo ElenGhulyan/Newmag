@@ -4,11 +4,19 @@ interface CheckoutData {
     name: string;
     surname: string;
     email: string;
+    tell: string;
+    city: string;
+    street: string;
+    postalCode : string;
 }
 interface CheckoutInvalidData {
     name: string;
     surname: string;
     email: string;
+    tell: string;
+    city: string;
+    street: string;
+    postalCode : string;
 }
 
 interface CheckoutContextType {
@@ -25,11 +33,19 @@ export const CheckoutProvider: React.FC<{ children: ReactNode }> = ({ children }
         name: '',
         surname: '',
         email: '',
+        tell: '',
+        city: '',
+        street: '',
+        postalCode: '',
     });
     const [invalidData, setInvalidData] = useState<CheckoutInvalidData>({
         name: '',
         surname: '',
         email: '',
+        tell: '',
+        city: '',
+        street: '',
+        postalCode: '',
     });
 
     return (

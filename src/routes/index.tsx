@@ -15,11 +15,12 @@ import authorSinglePage from "./authorSinglePage";
 import translatorSinglePage from "./translatorSinglePage";
 import articleSinglePage from "./articleSinglePage";
 import shopingCart from "./shopingCart";
+import Header from "../components/main/header/header";
 
 export default createBrowserRouter([
     {
         path: "/",
-        element: <> <App/> <HomePage/><Footer/> </>,
+        element: <> <App/><Header/> <HomePage/><Footer/> </>,
     },
     ...BooksRouts,
     ...AuthorsRoutes,

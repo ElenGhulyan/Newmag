@@ -11,8 +11,16 @@ const PaymentSystem = () => {
     const handleCheckout = () => {
         for (const field in data) {
             let isInValid = '';
+
             if (data[field as keyof typeof data].trim() === '') {
                 isInValid = 'Field is required';
+
+            }
+            if(data.name && data.name.length < 5){
+                isInValid = 'ssss'
+            }
+            if(data.surname && data.surname.length < 7){
+                isInValid = 'addd'
             }
             setInvalidData((prevData) => ({ ...prevData, [field]: isInValid }));
         }
@@ -98,9 +106,12 @@ const PaymentSystem = () => {
                             <p className='text-lg font-bold'>14400֏</p>
                         </div>
                     </div>
-                    <button onClick={handleCheckout}>
-                        Pay
-                    </button>
+                    <div className='mx-auto mt-[40px] text-center '>
+                        <button onClick={handleCheckout} className=' py-[14px]  text-base font-medium text-white w-full max-w-[424px] rounded-[10px] bg-[#F34802]'>
+                            Անցնել վճարման
+                        </button>
+                    </div>
+
                 </div>
 
             </div>

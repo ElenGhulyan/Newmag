@@ -2,7 +2,7 @@ import '../main.css';
 
 import HeaderLogo from '../../../assets/images/header-logo.svg';
 import {useState} from "react";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 const Header = () => {
 
@@ -17,12 +17,12 @@ const Header = () => {
             <header className="bg-white w-full my-[21px] mb-[100px] relative">
                 <div className="content  flex justify-between items-center ">
                     <div className="logo-header">
-                        <Link to='/'><img src={HeaderLogo} alt="header logo"/></Link>
+                        <NavLink to='/'><img src={HeaderLogo} alt="header logo"/></NavLink>
                     </div>
                     <nav   className={`header-menu ${show && 'menu-show'}`}>
                         <ul className="flex gap-x-10">
                             <li className='menu-about-us flex gap-[5px] items-center relative'>
-                                <Link to='/about_us'>Մեր մասին</Link>
+                                <NavLink to='/about_us'>Մեր մասին</NavLink>
                                 {/*<a href="src/components/main/header/header.tsx">Մեր մասին</a>*/}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none">
@@ -45,12 +45,12 @@ const Header = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li><Link to='/books' >Գրքեր</Link></li>
-                            <li><Link to='/authors' >Հեղինակներ</Link></li>
-                            <li><Link to='/translators'>Թարգմանիչներ</Link></li>
-                            <li><Link to='/articles'>Հոդվածներ</Link></li>
-                            <li><Link to='/reviews'>Կարծիքներ</Link></li>
-                            <li><Link to='/media'>Մեդիա</Link></li>
+                            <li><NavLink to='/books' >Գրքեր</NavLink></li>
+                            <li><NavLink to='/authors' >Հեղինակներ</NavLink></li>
+                            <li><NavLink to='/translators'>Թարգմանիչներ</NavLink></li>
+                            <li><NavLink to='/articles'>Հոդվածներ</NavLink></li>
+                            <li><NavLink to='/reviews'>Կարծիքներ</NavLink></li>
+                            <li><NavLink to='/media'>Մեդիա</NavLink></li>
                         </ul>
                     </nav>
                     <div className=" header-icons flex gap-[30px] items-center	">
