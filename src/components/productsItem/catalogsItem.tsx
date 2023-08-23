@@ -2,8 +2,8 @@ import {CatalogData} from "../../mockData/HomeData/catalogData";
 
 const CatalogsItem = ({item}:{item:any}) => {
     return (
-        <>
-                        <div className='content'>
+        < >
+                        <div className='w-full max-w-[230px] '>
                             <div className='w-full max-w-[230px] h-[336px]'>
                                 <img src={item.src} className='w-full h-full' alt={item.alt}/>
                             </div>

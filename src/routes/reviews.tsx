@@ -19,7 +19,7 @@ export  default [
     },
     {
         path: "/reviews/:bookId/:reviewId",
-        element: <><Header/> <ReviewSinglePage  /> <Footer /> </>  ,
+        element: <><Header/> <ReviewSinglePage /> <Footer /> </>  ,
     },
 
 ]

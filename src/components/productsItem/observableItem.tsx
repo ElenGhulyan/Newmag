@@ -6,7 +6,7 @@ const ObservableItem = ({item}:{item:any}) => {
         <>
 
                     <div>
-                        <div className='w-full max-w-[230px] h-[354px]'>
+                        <div className='w-full max-w-[230px] h-[354px] 2xl:max-w-[190px] 2xl:h-[290px]'>
                             <img src={item.src} className='w-full' alt={item.alt}/>
                         </div>
                         <div>

@@ -1,8 +1,10 @@
 import '../main.css';
 
 import HeaderLogo from '../../../assets/images/header-logo.svg';
-import {useState} from "react";
-import {Link, NavLink} from "react-router-dom";
+import {useRef, useState} from "react";
+import {Link, NavLink, useParams} from "react-router-dom";
+import useOnClickOutside from "../../../hooks/outeSide";
+
 
 const Header = () => {
 
@@ -11,15 +13,19 @@ const Header = () => {
     const [show, setShow] = useState(false)
 
     const [cartOpen, setCartOpen ] = useState(false)
+    const outSideRef = useRef(null)
+    useOnClickOutside(outSideRef, ()=> {
+        setShow(false)
+    })
 
     return (
         <>
-            <header className="bg-white w-full my-[21px] mb-[100px] relative">
+            <header className="bg-white w-full py-[21px] mb-[100px] relative">
                 <div className="content  flex justify-between items-center ">
                     <div className="logo-header">
                         <NavLink to='/'><img src={HeaderLogo} alt="header logo"/></NavLink>
                     </div>
-                    <nav   className={`header-menu ${show && 'menu-show'}`}>
+                    <nav   className={`header-menu ${show && 'menu-show'}`} ref={outSideRef}>
                         <ul className="flex gap-x-10">
                             <li className='menu-about-us flex gap-[5px] items-center relative'>
                                 <NavLink to='/about_us'>Մեր մասին</NavLink>
@@ -53,20 +59,18 @@ const Header = () => {
                             <li><NavLink to='/media'>Մեդիա</NavLink></li>
                         </ul>
                     </nav>
+                    <div className='burger-icon hidden'
+                         onClick={()=>{
+                             setShow(!show)
+                         } }>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="2" y="4" width="21" height="2" rx="1" fill="black"/>
+                            <rect x="9" y="11" width="14" height="2" rx="1" fill="black"/>
+                            <rect x="2" y="18" width="21" height="2" rx="1" fill="black"/>
+                        </svg>
+                    </div>
                     <div className=" header-icons flex gap-[30px] items-center	">
-
-                        <div className='burger-icon hidden'
-                        onClick={()=>{
-                        setShow(!show)
-                        }
-                        }>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <rect x="2" y="4" width="21" height="2" rx="1" fill="black"/>
-                                <rect x="9" y="11" width="14" height="2" rx="1" fill="black"/>
-                                <rect x="2" y="18" width="21" height="2" rx="1" fill="black"/>
-                            </svg>
-                        </div>
-
 
                         <select className="border-0 text-black text-lg font-medium" name="" id="">
                             <option value="En">En</option>

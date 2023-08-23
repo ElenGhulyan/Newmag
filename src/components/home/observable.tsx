@@ -12,7 +12,7 @@ const Observable = () => {
                     <div className=' mt-[100px] pt-[100px]'>
                         <SectionTitle title='Բոլոր ապրանքները' url='docs' heading={'Ուշադրության արժանի'} />
                     </div>
-                    <div className='flex gap-[60px] pb-[100px] mt-[60px]'>
+                    <div className='flex flex-wrap  gap-[60px] pb-[100px] mt-[60px] 2xl:justify-center'>
                         {    HomeProductsItem.map((item)=>{
                             return(
                         <ObservableItem item={item} />

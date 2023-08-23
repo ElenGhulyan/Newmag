@@ -13,7 +13,6 @@ import HomePage from "../pages/homePage";
 import Footer from "../components/main/footer/footer";
 import authorSinglePage from "./authorSinglePage";
 import translatorSinglePage from "./translatorSinglePage";
-import articleSinglePage from "./articleSinglePage";
 import shopingCart from "./shopingCart";
 import Header from "../components/main/header/header";
 
@@ -32,7 +31,6 @@ export default createBrowserRouter([
     ...BooksSinglePage,
     ...authorSinglePage,
     ...translatorSinglePage,
-    ...articleSinglePage,
     ...shopingCart
 
 
