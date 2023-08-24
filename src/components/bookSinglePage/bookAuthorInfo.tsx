@@ -11,14 +11,14 @@ const BookAuthorInfo = () => {
     return(
         <>
             {bookDetails ? (
-                <div className='content flex justify-between'>
+                <div className='content flex justify-between 3xl:justify-between 3xl:gap-[40px]'>
 
 
-                    <div className='w-full max-w-[940px] mt-[100px]'>
+                    <div className='w-full max-w-[940px] mt-[100px] 3xl:max-w-[670px]'>
                         <h2 className=' text-[28px] font_semibold mb-[60px]'>  Հեղինակ </h2>
-                        <div className='pt-[40px] pl-[44px] bg-[#F1F6F9] pb-[100px] rounded-[20px]'>
+                        <div className='pt-[40px] pl-[44px] bg-[#F1F6F9] pb-[100px] rounded-[20px] 3xl:pr-[20px] 3xl:pl-[20px] 3xl:pb-[40px] '>
                             <div className='flex gap-[30px] mb-[30px] items-center'>
-                                <div className='w-full max-w-[134px]'>
+                                <div className='w-full max-w-[134px] bg-white rounded-[100%]'>
                                     <img src={ typeof bookDetails.author == "object"
                                         ? bookDetails.author.img
                                         : "ggg"} alt=""/>
@@ -33,12 +33,12 @@ const BookAuthorInfo = () => {
                         </div>
                     </div>
 
-                    <div className='w-full max-w-[640px] mt-[100px] h-[481px]'>
+                    <div className='w-full max-w-[640px] mt-[100px] h-[481px] 3xl:max-w-[640px]'>
                         <h2 className=' text-[28px] font_semibold mb-[60px]'>Գրքի թրեյլեր</h2>
                         <div >
                             <iframe  src={typeof bookDetails.author == "object"
                                     ? bookDetails.author.video
-                                    : 'dsdsd'}
+                                    : 'video .....'}
                                     title="YouTube video player" frameBorder="0"
                                     className='rounded-[20px] w-[640px] h-[481px]'
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

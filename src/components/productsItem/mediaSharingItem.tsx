@@ -6,14 +6,14 @@ const MediaSharingItem = () => {
             {
                 MediaSharingData.map((item) =>{
                     return (
-                       <div className='border border-solid border-[#FFFFFF66] px-[30px] py-[40px] rounded-[20px]'>
+                       <div className='border border-solid border-[#FFFFFF66] px-[30px] py-[40px] rounded-[20px] w-full max-w-[311px] 3xl:max-w-[250px] 3xl:px-[20px] 3xl:py-[30px]'>
                           <div className='flex gap-[10px] pb-[15px] items-center'>
                               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                                   <path d="M9.8459 12.3734L9.5059 12.0436L9.16591 12.3734L4.50009 16.8982V4.06774C4.50009 3.98368 4.57565 3.88937 4.69923 3.88937H14.3126C14.4377 3.88937 14.5117 3.98234 14.5117 4.06774V16.8982L9.8459 12.3734Z" stroke="white" stroke-width="0.976744"/>
                               </svg>
                               <p className='text-[#fff] text-[16px] font-bold leading-7'>Shamshyan</p>
                           </div>
-                           <h3 className='text-[#fff] text-lg font-bold'>
+                           <h3 className='text-[#fff] text-lg font-bold 3xl:text-base'>
                                Տեսահոլովակի պրեմիերա․ Սյուզաննա Մելքոնյան - «Մեռնել սիրելով». exclusivelife.am   
                            </h3>
                            <div className='flex gap-[10px] justify-end mt-[20px] items-center'>

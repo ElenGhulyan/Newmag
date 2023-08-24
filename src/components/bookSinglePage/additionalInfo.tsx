@@ -15,7 +15,7 @@ const AdditionalInfo = () =>{
 
         <>
             {bookDetails ? (
-                <div className='w-full max-w-[559px] '>
+                <div className='w-full max-w-[559px] 3xl:max-w-[450px]'>
                     <h2 className='text-xl font_semibold text-black mb-[30px] mt-[100px]'>Լրացուցիչ
                         տեղեկություն</h2>
                     <div className='flex flex-col gap-[25px] '>

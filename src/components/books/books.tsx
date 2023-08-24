@@ -41,7 +41,7 @@ const Books = () => {
             </div>
 
 
-            <div className='w-full grid grid-cols-6 gap-[30px] mt-[65px]'>
+            <div className='w-full grid grid-cols-6 gap-[30px] mt-[65px] 3xl:grid-cols-5 2xl:grid-cols-4 xl:gap-[15px] lg:grid-cols-3 md:grid-cols-2'>
                 {
                     items.map((item) => {
                         return (
@@ -54,6 +54,8 @@ const Books = () => {
 
             <Pagination data={BooksData} setActiveItems={(items:any)=>{
                 SetItems(items)}} />
+
+
 
         </div>
     )

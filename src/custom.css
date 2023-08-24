@@ -154,6 +154,15 @@ input.is-invalid {
     border-color: red;
 }
 
+
+@media (max-width: 1600px){
+    .main-slider {
+        margin-right: 24px;
+        width: 290px
+    }
+
+}
+
 @media (max-width: 1400px) {
     .header-menu ul {
         gap: 25px;
@@ -219,5 +228,12 @@ input.is-invalid {
     }
     .header-icons{
         display: none;
+    }
+}
+
+@media (max-width: 576px){
+    .unset-width {
+        width: unset;
+        padding: 0;
     }
 }

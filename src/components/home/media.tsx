@@ -8,7 +8,7 @@ import CatalogsItem from "../productsItem/catalogsItem";
 const Media = () => {
     return (
         <>
-            <section className='content '>
+            <section className='content unset-width'>
                 <div className='mt-[100px]'>
                     <SectionTitle title='Բոլոր հոդվածները' url='docs' heading={'Հոդվածներ'} />
                 </div>

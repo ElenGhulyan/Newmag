@@ -59,7 +59,7 @@ const BookItem = ({ item }: { item: any }) => {
 
     return (
         <>
-            <div className='px-[20px] py-[30px] border  rounded-[10px] bg-white shadow'>
+            <div className='px-[20px] py-[30px] border  rounded-[10px] bg-white shadow xl:py-[15px]'>
                 <div className='w-full max-w-[140px] h-[200px] m-auto'>
                     <Link to={`/books/${item.id}`}  >
                         <img  src={BookSectionImg}  alt="" className='w-full h-full'/>

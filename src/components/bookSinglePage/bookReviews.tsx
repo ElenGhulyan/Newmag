@@ -67,34 +67,34 @@ const BookReviews = () => {
         <div className='content'>
             {bookDetails ? (
                 <div className='flex my-[100px] justify-between'>
-                    <div className=' max-w-[940px] w-full '>
+                    <div className=' max-w-[940px] w-full 3xl:max-w-[700px]'>
                         <h2 className='text-[28px] font_semibold text-black'>
                             Կարծիքներ{' '}
                             <sub className='text-sm font-normal text-[#4C4C4C]'>
                                 {bookDetails.reviews ? '(' + bookDetails.reviews.length +' Կարծիք) ' : 0}
                             </sub>
                         </h2>
-                        <div className='mt-[60px] bg-[#F1F6F9] pt-[40px] pl-[36px] pb-[48px] rounded-[20px]'>
+                        <div className='mt-[60px] bg-[#F1F6F9] pt-[40px] pl-[36px] pb-[48px] rounded-[20px] 3xl:pl-[15px]'>
                             {bookDetails.reviews &&
                                 bookDetails.reviews.map((review) => (
-                                    <div className='flex gap-[14px] mb-[35px]' key={review.name}>
+                                    <div className='flex gap-[14px] mb-[35px] 3xl:mb-[20px]' key={review.name}>
                                         <div className='w-full max-w-[70px]'>
                                             <img src={review.avatar} className='w-full' alt='' />
                                         </div>
                                         <div>
-                                            <h4 className='text-base font-bold mr-[10px] mb-[10px]'>
+                                            <h4 className='text-base font-bold mr-[10px] mb-[10px] 3xl:mb-[5px]'>
                                                 {review.name} <span className='font-normal text-sm text-[#4C4C4C] '>1 օր առաջ</span>
                                             </h4>
-                                            <p className='text-[16px] leading-[28px] font-normal'>{review.comment}</p>
+                                            <p className='text-[16px] leading-[28px] font-normal 3xl:text-sm'>{review.comment}</p>
                                         </div>
                                     </div>
-                                ))}
+                                )).splice(0,6)}
                         </div>
                     </div>
 
-                    <div className='w-full max-w-[640px] '>
+                    <div className='w-full max-w-[640px] 3xl:max-w-[600px] '>
                         <h2 className='mb-[60px] text-[28px] font_semibold text-black'>Թողնել կարծիք </h2>
-                        <div className='px-[80px] py-[80px] bg-[#F1F6F9] rounded-[20px]'>
+                        <div className='px-[80px] py-[80px] bg-[#F1F6F9] rounded-[20px] 3xl:px-[50px] 3xl:py-[50px]'>
 
                             <form className='grid gap-[30px]' onSubmit={handleFormSubmit}>
                                 <input

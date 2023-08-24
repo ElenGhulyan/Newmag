@@ -20,7 +20,7 @@ const BookInfo = ({bookId, bookDetails}:any) => {
                         <div>
                             <div>
                                 <h1 className='font-extrabold text-2xl text-[#000] mb-[15px]'>{bookDetails.bookTitle} </h1>
-                                <p className='text-sm font-normal text-[#4C4C4C] mb-[40px]'>{bookDetails.author.name} </p>
+                                <p className='text-sm font-normal text-[#4C4C4C] mb-[40px] 3xl:mb-[25px]'>{bookDetails.author.name} </p>
                             </div>
                             <div>
                                 <div className='border-r-[1px] w-full max-w-[512px] pr-[40px]'>
@@ -32,9 +32,9 @@ const BookInfo = ({bookId, bookDetails}:any) => {
 
 
                                 <div className='flex gap-[40px] rounded-[10px] mt-[40px] items-center'>
-                                    <p className='text-3xl text-[#F34802] font-bold '>{bookDetails.price} ֏</p>
+                                    <p className='text-3xl text-[#F34802] font-bold  3xl:text-[26px]'>{bookDetails.price} ֏</p>
                                     <button
-                                        className='py-[13px] px-[30px] bg-[#F34802] text-base font-medium text-[#fff] flex gap-[10px] rounded-[10px]'>
+                                        className='py-[13px] px-[30px] bg-[#F34802] text-base font-medium text-[#fff] flex gap-[10px] rounded-[10px] 3xl:text-[14px]'>
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                              width="24" height="24" viewBox="0 0 24 24" fill="none">
                                             <path

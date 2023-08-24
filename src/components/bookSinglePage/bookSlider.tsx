@@ -28,7 +28,7 @@ const BookSlider = () => {
 
         <>
             {bookDetails ? (
-                <div className='flex gap-[40px] content'>
+                <div className='flex gap-[40px] content 3xl:gap-[20px]'>
 
                     <div>
                         <VerticalSlider images={bookDetails.images}/>
@@ -46,13 +46,6 @@ const BookSlider = () => {
 
                     <BookInfo bookId={bookId} bookDetails={bookDetails}/>
                     <AdditionalInfo  />
-
-
-
-
-
-
-
 
 
                 </div>
